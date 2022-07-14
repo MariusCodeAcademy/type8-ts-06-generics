@@ -32,7 +32,6 @@ const warehouse1 = {
   ceo: 'James Bond',
   town: 'Vilnius',
   street: 'Vokieciu st',
-  postalAddress: 'Vilnius, Vokieciu st',
 };
 
 // postalAddress = town street
