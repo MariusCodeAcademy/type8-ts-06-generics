@@ -28,7 +28,7 @@ const usersT: SimpleUser[] = [
 
 type RezType = Record<SimpleUser['id'], Omit<SimpleUser, 'id'>>;
 
-const transformToRez = (arr: SimpleUser[]) => {
+const transformToRez = (arr: SimpleUser[]): RezType => {
   return arr.reduce((acc: RezType, curr: SimpleUser) => {
     // curr = { id: 'u_1', name: 'John', town: 'London', hasDog: false }
     // rest = {name: 'John', town: 'London', hasDog: false}
@@ -39,6 +39,7 @@ const transformToRez = (arr: SimpleUser[]) => {
 };
 
 console.log(transformToRez(usersT));
+const rez1: RezType = transformToRez(usersT);
 
 const rez = {
   u_1: { name: 'John', town: 'London', hasDog: false },
