@@ -8,6 +8,13 @@
 
 ## uzd2
 
+```
+interface Permition {
+  status: 'granted' | 'denied';
+  requestedBy: string;
+}
+```
+
 1. sukurti funkcija kuria priima argumentu Permition tipo objekta ir grazina ir ataspausdina
    1.1 "Owner James permition granted" arba
    1.2 "Owner Severijus permition denied"
